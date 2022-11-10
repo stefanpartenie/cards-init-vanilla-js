@@ -21,9 +21,8 @@ adaugaPersoana.addEventListener("click",()=>{
     nume: adaugaNume.value,
     prenume: adaugaPrenume.value,
     data_nasterii: adaugaDataNasterii.value,
-    sex: adaugaSexM.checked,
-    sex: adaugaSexF.checked,
-    cnp: +adaugaCnp
+    sex: adaugaSexM.checked?"M":"F",
+    cnp: +adaugaCnp.value
   }
 
 
@@ -35,4 +34,17 @@ adaugaPersoana.addEventListener("click",()=>{
 
 
 
+})
+
+
+content.addEventListener("click",(e)=>{
+
+
+  let obj=e.target;
+
+  if(obj.tagName==="BUTTON"){
+
+
+      console.log(obj.classList[0]);
+  }
 })
