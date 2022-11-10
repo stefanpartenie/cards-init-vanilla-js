@@ -1,0 +1,55 @@
+body {
+    height: 100%;
+    margin: 0;
+  }
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    
+    padding: 10px;
+}
+
+.header {
+    height: 30px;
+    border: 2px solid green;
+    grid-column: 1 / 6;
+
+  }
+  
+.content{ 
+    
+    grid-column: 2 / 6;
+  }
+  
+.menu{
+ 
+    border: 2px solid red;
+    grid-row: 2 / 4;
+  }
+
+  .content{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .content > div {
+    background-color: rgb(236, 221, 221);
+    text-align: center;
+    border: 2px solid ;
+    font-size: 15px;
+  }
+
+  .add-persoana{
+    cursor: pointer;
+    color: rgb(218, 67, 67);
+    border-radius: 3rem;
+    border: 0.1rem solid rgb(20, 18, 18);
+  }
+  .add{
+    margin-bottom: 10px;
+  }
