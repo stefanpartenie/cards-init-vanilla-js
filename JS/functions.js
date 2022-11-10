@@ -10,6 +10,7 @@ function createCard(carduri){
     <p>${carduri.data_nasterii}</p>
     <p>${carduri.sex}</p>
     <p>${carduri.cnp}</p>
+    <button class="${carduri.nume}">Delete</button>
     </div>
     `
 
@@ -66,5 +67,8 @@ function searchBySexM(arr,sex){
     return filtrate;
 
 }
+
+//todo:functie ce primeste ca parametru un arr si sterge masina dupa nume
+
 
 
