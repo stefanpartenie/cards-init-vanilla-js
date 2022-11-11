@@ -70,5 +70,19 @@ function searchBySexM(arr,sex){
 
 //todo:functie ce primeste ca parametru un arr si sterge masina dupa nume
 
+//
+function stersCard(arr,nume){
+
+    let filtrare=[];
+    for(let i=0; i<arr.length;i++)
+    {
+        console.log("aici");
+        if(arr[i].nume!=nume)
+        {
+            filtrare.push(arr[i]);
+        }
+    }
+    return filtrare;
+}
 
 
